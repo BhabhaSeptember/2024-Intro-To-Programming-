@@ -131,7 +131,6 @@ while (remainingLetters > 0 && remainingGuesses > 0) {
 }
 
 
-
 function pickWord() {
   let words = ["bhabha", "tracy", "akhona", "september"];
   return words[Math.floor(Math.random() * words.length)];
@@ -150,18 +149,17 @@ function showPlayerProgress(answerArray) {
 }
 
 function getGuess() {
-  return prompt("Guess a letter, or click Cancel to stop playing.");
+  return prompt("Guess a letter, or click Cancel to stop playing.").toLowerCase();
 }
 
 function updateGameState(guess, word, answerArray) {
-  var appearances = 0;
-  for (var j = 0; j < word.length; j++) {
+  let appearances = 0;
+  for (let j = 0; j < word.length; j++) {
     if (word[j] === guess) {
       answerArray[j] = guess;
       appearances++;
     }
   }
-
   return appearances;
 }
 
