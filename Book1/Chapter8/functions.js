@@ -71,15 +71,103 @@
 // console.log(fifthLetter("Alex"));
 
 //RETURNING (ALTERNATIVE TO IF...ELSE STATEMENTS)
-function medalForScore(score) {
-  if (score < 3) {
-    return "Bronze";
+// function medalForScore(score) {
+//   if (score < 3) {
+//     return "Bronze";
+//   }
+//   if (score < 7 ) {
+//     return "Silver";
+//   }
+//   return "Gold";
+// };
+// console.log(medalForScore(7));
+// console.log(medalForScore(2));
+// console.log(medalForScore(6));
+
+//PROGRAMMING CHALLENGES
+//#1: ARITHMETIC WITH FUNCTIONS
+// function add(num1, num2) {
+//   return num1 + num2;
+// };
+
+// function multiply(num1, num2) {
+//   return num1 * num2;
+// };
+
+// console.log(add(multiply(36325, 9824), 777));
+
+// //#2: SAME ARRAYS
+// function areArraysSame(array1, array2) {
+//   for (let i = 0; i < array1.length; i++) {
+//     if (array1.length === array2.length && array1[i] === array2[i]) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// }
+
+// console.log(areArraysSame([1, 2, 3], [4, 5, 6]));
+// console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
+// console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]));
+
+//#3: HANGMAN USING FUNCTIONS
+let word = pickWord();
+let answerArray = setupAnswerArray(word);
+let remainingLetters = word.length;
+let remainingGuesses = 10;
+
+while (remainingLetters > 0 && remainingGuesses > 0) {
+  showPlayerProgress(answerArray);
+  let guess = getGuess();
+  if (guess === null) {
+    break;
+  } else if (guess.length !== 1) {
+    alert("Please enter a single letter.");
+  } else {
+    let correctGuesses = updateGameState(guess, word, answerArray);
+    remainingLetters -= correctGuesses;
   }
-  if (score < 7 ) {
-    return "Silver";
+}
+
+
+
+function pickWord() {
+  let words = ["bhabha", "tracy", "akhona", "september"];
+  return words[Math.floor(Math.random() * words.length)];
+}
+
+function setupAnswerArray(word) {
+  let answerArray = [];
+  for (let i = 0; i < word.length; i++) {
+    answerArray[i] = "_";
   }
-  return "Gold";
-};
-console.log(medalForScore(7));
-console.log(medalForScore(2));
-console.log(medalForScore(6));
+  return answerArray;
+}
+
+function showPlayerProgress(answerArray) {
+  alert(answerArray.join(" "));
+}
+
+function getGuess() {
+  return prompt("Guess a letter, or click Cancel to stop playing.");
+}
+
+function updateGameState(guess, word, answerArray) {
+  var appearances = 0;
+  for (var j = 0; j < word.length; j++) {
+    if (word[j] === guess) {
+      answerArray[j] = guess;
+      appearances++;
+    }
+  }
+
+  return appearances;
+}
+
+function showAnswerAndCongratulatePlayer(answerArray) {
+  showPlayerProgress(answerArray);
+  alert("Good job! The answer was " + answerArray.join(""));
+}
+
+showAnswerAndCongratulatePlayer(answerArray);
