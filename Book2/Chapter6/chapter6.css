@@ -10,18 +10,34 @@ body {
 }
 
 .eye {
-    background-color:black;
+    background-color:rgb(49, 48, 48);
     width:25px;
     height:25px;
     border-radius: 50%;
-    left: 30px;
+    left: 40px;
+}
+.ear {
+    background-color:rgb(49, 48, 48);
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    left: 40px;
 }
 .arm {
     background-color: grey;
+    border: 2px solid black;
     position: absolute;
     top: 35%;
     width: 3%;
-    height: 40%;
+    height: 200px;
+}
+.leg {
+    background-color: grey;
+    border: 2px solid black;   
+    position: absolute;
+    top: 35%;
+    width: 3%;
+    height: 300px;
 }
 /* #hat {
     background-color: brown;
@@ -48,67 +64,70 @@ body {
     left: 180px;
     top: 50px;
 }
-#top {
-position: absolute;
-background-color: black;
-/* border-radius: 50%; */
-}
+
 #middle{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    border: 2px solid black;
+    width: 25px;
+    height: 25px;
+    border-radius: 45%;
     background-color: grey;
-    left: 305px;
-    top: 80px;
-    ;
+    left: 316px;
+    top: 123px;
+    
 }
 #bottom{
     position: absolute;
-    width: 10px;
-    height: 50px;   
+    border: 2px solid black;
+    width: 8px;
+    height: 40px;   
     background-color: grey;
-    left: 320px;
-    top: 100px;    
+    left: 325px;
+    top: 150px;    
 }
 
 #head {
-    width: 150px;
-    height: 150px;
-    border-radius:10%;
+    width: 160px;
+    height: 115px;
+    border: 2px solid black;
+    border-radius: 10%;
     background-color: grey;
     position: absolute;
     left: 250px;
-    top: 150px;
+    top: 175px;
+}
+
+#neck {
+    border: 2px solid black;
+    width: 25px;
+    height: 5px;
+    background-color: grey;
+    position: absolute;
+    left: 320px;
+    top: 294px;
 }
 #righteye {
     position: absolute;
-    left: 10%;
-    top: 15%;
+    left: 30px;
+    top: 40px;
 }
 #lefteye {
     position: absolute;
     left: 60%;
-    top: 15%;
+    top: 40px;
 }
-#nose {
-    position: absolute;
-    left: 45%;
-    top: 50%;
-    width: 10%;
-    height: 10%;
-    background-color: black;
-}
+
 #mouth {
     position: absolute;
-    width: 40%;
-    height: 10%;
-    left: 30%;
-    top: 70%;
-    background-color: white;
+    width: 40px;
+    height:5px;
+    left: 55px;
+    top: 75px;
+    background-color: rgb(49, 48, 48);
 }
 #body {
     position: absolute;
+    border: 2px solid black;
     left:200px;
     top: 300px;
     width: 240px;
@@ -125,10 +144,24 @@ background-color: black;
     height: 200px;
     top: 100px;
 }
+#rightleg {
+    position:absolute;
+    left:260px;
+    width: 20px;
+    height: 200px;
+    top: 450px;
+}
 #leftarm {
     position: absolute;
-    left: 440px;
+    left: 442px;
     width: 200px;
     height: 20px;
     top: 300px;
+}
+#leftleg {
+    position: absolute;
+    left: 350px;
+    width: 20px;
+    height: 190px;
+    top: 462px;
 }
