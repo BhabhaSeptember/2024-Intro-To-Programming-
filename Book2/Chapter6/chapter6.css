@@ -1,0 +1,134 @@
+#robot {
+    margin-left:auto;
+    margin-right:auto;
+    /* width:100%; */
+    /* position: absolute; */
+}
+body {
+    font-family: "Comic Sans MS", cursive, sans‐serif;
+    background-color: rgb(168, 219, 219);
+}
+
+.eye {
+    background-color:black;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    left: 30px;
+}
+.arm {
+    background-color: grey;
+    position: absolute;
+    top: 35%;
+    width: 3%;
+    height: 40%;
+}
+/* #hat {
+    background-color: brown;
+    height: 5%;
+    width: 40%;
+    position: absolute;
+    left: 28%;
+} */
+#switch{
+    position: absolute;
+    border-radius: 50%;
+    background-color: green;
+    width:10%;
+    height: 10%;
+    left: 150px;
+    top: 50px;
+}
+#switch2{
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    width:10%;
+    height: 10%;
+    left: 180px;
+    top: 50px;
+}
+#top {
+position: absolute;
+background-color: black;
+/* border-radius: 50%; */
+}
+#middle{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    left: 305px;
+    top: 80px;
+    ;
+}
+#bottom{
+    position: absolute;
+    width: 10px;
+    height: 50px;   
+    background-color: grey;
+    left: 320px;
+    top: 100px;    
+}
+
+#head {
+    width: 150px;
+    height: 150px;
+    border-radius:10%;
+    background-color: grey;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+}
+#righteye {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+#lefteye {
+    position: absolute;
+    left: 60%;
+    top: 15%;
+}
+#nose {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    width: 10%;
+    height: 10%;
+    background-color: black;
+}
+#mouth {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    left: 30%;
+    top: 70%;
+    background-color: white;
+}
+#body {
+    position: absolute;
+    left:200px;
+    top: 300px;
+    width: 240px;
+    height: 130px;
+    background-color: grey;
+    text-align:center;
+    padding-top: 30px;
+}
+
+#rightarm {
+    position:absolute;
+    left:200px;
+    width: 20px;
+    height: 200px;
+    top: 100px;
+}
+#leftarm {
+    position: absolute;
+    left: 440px;
+    width: 200px;
+    height: 20px;
+    top: 300px;
+}
