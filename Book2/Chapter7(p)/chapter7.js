@@ -24,10 +24,14 @@ let rightEye = document.getElementById("righteye");
 let leftEye = document.getElementById("lefteye");
 
 let leftArm = document.getElementById("leftarm");
+let rightArm = document.getElementById("rightarm");
 
+let head = document.getElementById("head");
 
 rightEye.addEventListener("click", moveUpDown);
 leftEye.addEventListener("click", moveUpDown);
+rightArm.addEventListener("click", moveUpDown);
+
 
 leftArm.addEventListener("click", moveRightLeft);
 
@@ -45,14 +49,25 @@ function moveUpDown(e) {
 }
 
 function moveRightLeft(e) {
-    let robotPart = e.target;
-    let left = 0;
-    let id = setInterval(frame, 50); // draw every 10ms
-    function frame() {
-      robotPart.style.left = left + "%";
-      left++;
-      if (left === 70) {
-        clearInterval(id);
-      }
-    }
+  let robotPart = e.target;
+
+  let left = 0;
+  let id = setInterval(frame, 50); // draw every 10ms
+  function frame() {
+    robotPart.style.left = left + "%";  
+    head.style.transform = "rotate(-10deg)";
+    left++;
+    if (left === 75) {
+      clearInterval(id);
+      moveRightArm();
+    } 
   }
+}
+
+
+// function moveRightArm(e) {
+//     let robotPart = e.target;
+
+    
+// }
+
