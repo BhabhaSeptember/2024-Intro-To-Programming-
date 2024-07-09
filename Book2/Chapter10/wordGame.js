@@ -12,10 +12,10 @@ function replaceIt() {
     let color = "<span class='replacement'>"+ document.getElementById("color").value + "</span>";
     let nounPlural = "<span class='replacement'>"+ document.getElementById("nounPlural").value + "</span>";
     let pastVerb = "<span class='replacement'>"+ document.getElementById("pastVerb").value + "</span>";
-    let beverage = "<span class='replacement'>"+ document.getElementById("adj1").value + "</span>";
+    let beverage = "<span class='replacement'>"+ document.getElementById("beverage").value + "</span>";
     let musicType = "<span class='replacement'>"+ document.getElementById("musicType").value + "</span>";
-    let diffRoom = "<span class='replacement'>"+ document.getElementById("adj1").value + "</span>";
-    let exclamation = "<span class='replacement'>"+ document.getElementById("adj1").value + "</span>";
+    let diffRoom = "<span class='replacement'>"+ document.getElementById("diffRoom").value + "</span>";
+    let exclamation = "<span class='replacement'>"+ document.getElementById("exclamation").value + "</span>";
     let pastVerb2 = "<span class='replacement'>"+ document.getElementById("pastVerb2").value + "</span>";
     let adjDance = "<span class='replacement'>"+ document.getElementById("adjDance").value + "</span>";
     let animal = "<span class='replacement'>"+ document.getElementById("animal").value + "</span>";
