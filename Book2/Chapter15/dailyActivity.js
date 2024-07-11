@@ -99,28 +99,28 @@ function displayActivity() {
   let youShould;
    switch (dayOfWeek) {
      case 0:
-       youShould = "Take it easy. You've earned it.";
+       youShould = "Learn a new language!";
        break;
      case 1:
-       youShould = "Gotta do what ya gotta do!";
+       youShould = "Do some coding projects!";
        break;
      case 2:
-       youShould = "Take time to smell the roses!";
+       youShould = "Do some aerobic exercises!";
        break;
      case 3:
-       youShould = "Don't forget to eat breakfast!";
+       youShould = "Read a Book!";
        break;
      case 4:
-       youShould = "";
+       youShould = "Go cycling or jogging!";
        break;
      case 5:
-       youShould = "Make a list of things you like to do.";
+       youShould = "Make a list of things you like to do!";
        break;
      case 6:
-       youShould = "Do one thing from your list of things you like to do.";
+       youShould = "Have a picnic at the park with family!";
        break;
      default:
-       youShould = "Error Code 456667355e2-Could Not find Day. g35";
+       youShould = "Relax and prepare for the coming week!";
        break;
    }
 

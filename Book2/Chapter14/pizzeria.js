@@ -29,19 +29,8 @@
 //     }
 
 
-
-
-
     // listen for button clicks
     document.getElementById("placeOrder").addEventListener("click", placeOrder);
-
-
-
-
-
-
-
-
 
     /**
      * gets form values
@@ -75,13 +64,7 @@
         // display the output
         document.getElementById("displayTotal").innerHTML = theOutput;
     }
-    
-    
-    
-    
-    
-    
-    
+     
     
     /**
      * calculates pizza price
@@ -91,18 +74,15 @@
         let extraCharge = 0;
         
         // Calculating extraCharge, if there is one.
-        if (typePizza === "supreme") {
-            extraCharge = Number(numPizzas) * 2;   //?????
+        if (typePizza === "SomethingMeaty") {
+            extraCharge = Number(numPizzas) * 2;   
             }
     
         orderPrice += extraCharge;
         return orderPrice;
     }
     
-    
-    
-    
-    
+ 
     /**
      * calculates delivery price
      */
@@ -110,7 +90,7 @@
         let deliveryPrice = 0;
         
         // calculate delivery price, if there is one
-        if ((deliveryCity === "Anytown") && (orderPrice > 10) || (birthday === "yes"))
+        if ((deliveryCity === "Stilfontein") && (orderPrice > 10) || (birthday === "yes"))
      {
      deliveryPrice = 0;
      } else {
