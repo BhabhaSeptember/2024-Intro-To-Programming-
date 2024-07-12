@@ -134,9 +134,7 @@ function stopTrain() {
    }
 
 
-/* DEBUG CODE : HADIYO (05/07/2023) */
-// let train = document.getElementById("train");
-// stopButton.addEventListener("click", stopTrain);
+
 
 
 
