@@ -148,7 +148,7 @@ a:hover {
   Portfolio section
 */
 
-#tmPortfolio {
+/* #tmPortfolio {
   padding-top: 80px;
 }
 
@@ -175,7 +175,7 @@ a:hover {
 
 .tm-portfolio-description h3 {
   margin-bottom: 20px;
-}
+} */
 
 .tm-text-green {
   color: #98cb00;
@@ -201,6 +201,48 @@ p {
   line-height: 1.8;
 }
 
+/* ====== Portfolio Grid View ====== */
+.tm-portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.tm-portfolio-card {
+  width: calc(33.333% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tm-portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.tm-portfolio-card img {
+  width: 100%;
+  height: 250px; /* or 250px for larger display */
+  object-fit: contain;
+  display: block;
+  border-bottom: 1px solid #eee;
+  background-color: #f0dbdb; /* optional: fills empty space around small images */
+  padding: 10px; /* optional: gives spacing around image */
+}
+
+.tm-portfolio-card h3 {
+  font-size: 1.4rem;
+  margin: 15px 0 10px;
+}
+
+.tm-portfolio-card p {
+  padding: 0 10px 20px;
+  font-size: 1rem;
+  color: #6b6b6b;
+}
+
 /*
   Contact section
 */
@@ -211,7 +253,6 @@ p {
 .skills {
   width: 10px;
   height: 10px;
-  
 }
 
 .tm-contact-item {
@@ -344,5 +385,17 @@ p {
 
   .tm-brand-container {
     padding: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tm-portfolio-card {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .tm-portfolio-card {
+    width: 100%;
   }
 }
